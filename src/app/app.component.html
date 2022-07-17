@@ -10,19 +10,9 @@
 <hr>
 
 <h1>*ngFor productos</h1>
-<div>
+<div class="products--grid">
   <div *ngFor="let product of products">
-    <img width="250" [src]="product.image" alt="image">
-    <h2>{{product.price}}</h2>
-    <p>{{product.name}}</p>
-  </div>
-</div>
-<hr>
-
-<h1>*ngFor productos</h1>
-<div>
-  <div *ngFor="let product of products">
-    <img width="250" [src]="product.image" alt="image">
+    <img [src]="product.image" alt="image">
     <h2>{{product.price}}</h2>
     <p>{{product.name}}</p>
   </div>
