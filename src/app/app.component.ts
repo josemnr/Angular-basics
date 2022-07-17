@@ -12,6 +12,12 @@ export class AppComponent {
   btnDisabled = true;
 
   newName = "";
+  widthImage = 10;
+  box = {
+    width:10,
+    height: 100,
+    background: 'red'
+  }
 
   person = {
     name:"Pepe",
