@@ -11,6 +11,12 @@ export class AppComponent {
   title = 'my-store';
   btnDisabled = true;
 
+  register = {
+    name: '',
+    email: '',
+    password: ''
+  }
+
   newName = "";
   widthImage = 10;
   box = {
@@ -86,5 +92,9 @@ export class AppComponent {
 
   deleteName(index: number) {
     this.names.splice(index, 1);
+  }
+
+  onRegister() {
+    console.log(this.register);
   }
 }
